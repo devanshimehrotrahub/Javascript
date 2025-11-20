@@ -3,33 +3,33 @@
 
 // ==========================================================================
 // values and variables
+
 // console.log("jonas");
 // console.log(23);
 
 // conventions in writing variable names
-// let firstName = "Matilda";
+
 // let first = "jonas";
+// let firstName = "Matilda";
 // let firstNamePerson;
 // let first_name_person;
-// console.log(firstName);
-// console.log(firstName);
-// console.log(firstName);
 
-// invalid
-// let 3years =3;
-// let jonas&matilda ="JM"
+// console.log(firstName);
 
 // use letters , alphabets (uppercase or lowercase ) symbols ($,_) only
 // let jonas_matilda = "JM";
 // let jonas$matilda = "JM";
 
+// invalid
+// let 3years =3;
+// let jonas&matilda ="JM";
+
 // reserved keyword
 // let new=27;
 // let function=27;
+// let name = "Jonas";
 
 // let $function = 27;
-
-// let name = "Jonas";
 
 // convention - used in objects (starting with capital letter )
 // let Person = "Jonas";
@@ -38,6 +38,7 @@
 // let PI = 3.1415;
 
 // use declaritive variable names
+
 // let myFirstJob = "Programmer";
 // let myCurrentJob = "Teacher";
 
@@ -64,31 +65,32 @@
 // JavaScript has dynamic typing: We do not have to manually define the data
 // type of the value stored in a variable. Instead, data types are determined automatically.
 
-// console.log(true);
-
 // let javascriptIsFun = true;
 // console.log(javascriptIsFun);
-
-// console.log(typeof true);
 // console.log(typeof javascriptIsFun);
-// console.log(typeof 23);
-// console.log(typeof "jonas");
+
+// let b = 23;
+// console.log(b);
+// console.log(typeof b);
+
+// let c = "jonas";
+// console.log(c);
+// console.log(typeof c);
 
 // dynamic typing
-
 // javascriptIsFun = "Yes!";
 // console.log(typeof javascriptIsFun);
 
 // let year;
-
-// console.log(typeof year);
 // console.log(year);
+// console.log(typeof year);
 
 // year = 1991;
 // console.log(typeof year);
 
-// console.log(typeof null);
-// console.log(null);
+// let d = null;
+// console.log(d);
+// console.log(typeof d);
 
 // ==========================================================================
 // three ways of declaring variables
@@ -109,7 +111,7 @@
 // var job = "programmer";
 // job = "teacher";
 
-// difference between var nd let
+// difference between var and let
 // let - blocked scoped
 // var - function scoped
 
@@ -180,13 +182,16 @@
 
 // console.log(`just a regular string...`);
 
-// bug
-// console.log("String with \n\
+// console.log(
+//   "String with \n\
 //      multiple \n\
-//       lines");
+//       lines"
+// );
 
 // correct one is
-// console.log("String with \n multiple \n lines");
+// console.log(`String with
+//      multiple
+//       lines`);
 
 // ==========================================================================
 // if  else statements
@@ -242,13 +247,14 @@
 
 // 5 falsy values : 0 , " ", undefined ,null ,NaN
 
-// let variable = null;
 // console.log(Boolean(0));
-// console.log(Boolean(undefined));
 // console.log(Boolean(""));
+// console.log(Boolean(undefined));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
+
 // console.log(Boolean("jonas"));
-// console.log(Boolean(variable));
-// console.log(Boolean({}));
+// console.log(Boolean({})); // error
 
 // const money = 0;
 // if (money) {
@@ -291,7 +297,7 @@
 // if (favourite !== 23) console.log("Why not 23?");
 
 // ==========================================================================
-// Logical Operators
+// boolean logic
 
 // const hasDriversLicense = true; // A
 // const hasGoodVision = true; // B
@@ -318,7 +324,7 @@
 // ==========================================================================
 // switch statements
 
-const day = "friday";
+// const day = "friday";
 
 // switch (day) {
 //   case "monday": // day === 'monday'
@@ -393,3 +399,4 @@ const day = "friday";
 // console.log(drink2);
 
 // console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
+
